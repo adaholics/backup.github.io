@@ -4,22 +4,22 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>Hank Quinlan's Blog</title>
-	<link href="http://cardano-pool-mary.github.io/blog/atom.xml" rel="self"/>
-	<link href="http://cardano-pool-mary.github.io/blog"/>
+	<title>Johann's Blog</title>
+	<link href="http://adaholycs.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://adaholycs.github.io/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://cardano-pool-mary.github.io/blog</id>
 	<author>
-		<name>cardano-pool-mary</name>
+		<name>cardano-pool-adaholycs</name>
 		<email>cardano-pool-mary@gmail.com</email>
 	</author>
 
 	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
-			<link href="http://cardano-pool-mary.github.io{{ post.url }}"/>
+			<link href="http://adaholycs.github.io{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>http://cardano-pool-mary.github.io{{ post.id }}</id>
+			<id>http://adaholycs.github.io{{ post.id }}</id>
 			<content type="html">{{ post.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
